@@ -1,0 +1,42 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    font-size: 48px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.cell.X {
+    color: lightcoral;
+}
+
+.cell.O {
+    color: lightcoral;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#restart-btn {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
